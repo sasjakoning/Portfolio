@@ -1,4 +1,7 @@
-body {margin: 0;}
+body {
+    margin: 0;
+    background-color: #E9E9E9;
+}
 
 ul.topnav {
     list-style-type: none;
