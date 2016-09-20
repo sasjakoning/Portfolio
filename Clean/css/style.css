@@ -32,7 +32,11 @@ ul.topnav li.right {float: right;}
     ul.topnav li {float: none;}
 }
 
-	#rcorners1 {
+.centered {
+    text-align: center;
+}
+
+#rcorners1 {
     border-radius: 15px;
     background: #A8A8A8;
     padding: 20px;

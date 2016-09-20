@@ -1,0 +1,4 @@
+Currently using centered class for everything that needs to be centered. It is defined in the css as "text-align: center"
+
+Made everything html validator compliant, but not too happy about some stuff, I don't think images should be centered using text-align, but not sure.
+
