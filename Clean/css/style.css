@@ -53,11 +53,8 @@ div {
    font-family: myFirstFont;
 }
 
-<!-- Hier begint de grid view shit -->
 
 body {
-  width: 80%;
-  margin: 30px auto;
   font-family: sans-serif;
 }
 
@@ -67,11 +64,11 @@ h3 {
   margin: 0 0 30px;
 }
 
-div1 {
+div.div1 {
   font-size: 0;
 }
 
-a {
+a.grid {
   font-size: 16px;
   overflow: hidden;
   display: inline-block;
@@ -80,25 +77,25 @@ a {
   margin-right: 8px;
 }
 
-a:nth-of-type(2n) {
+a.grid:nth-of-type(2n) {
   margin-right: 0;
 }
 
 @media screen and (min-width: 50em) {
-  a {
+  a.grid {
     width: calc(25% - 6px);
   }
   
-  a:nth-of-type(2n) {
+  a.grid:nth-of-type(2n) {
     margin-right: 8px;
   }
   
-  a:nth-of-type(4n) {
+  a.grid:nth-of-type(4n) {
     margin-right: 0;
   }
 }
 
-a:hover img {
+a.grid:hover img {
   transform: scale(1.15);
 }
 
@@ -107,22 +104,11 @@ figure {
 }
 
 img {
+  margin: 8px;
   border: none;
   max-width: 100%;
   height: auto;
   display: block;
   background: #ccc;
   transition: transform .2s ease-in-out;
-}
-
-.p a {
-  display: inline;
-  font-size: 13px;
-  margin: 0;
-}
-
-.p {
-  text-align: center;
-  font-size: 13px;
-  padding-top: 100px;
 }
