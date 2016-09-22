@@ -1,0 +1,389 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*achtergrondkleur of afbeelding hier instellen*/
+body{
+	background-color:#E2E2E2;
+	margin:0;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+	
+img, div {
+	transition: all .55s ease-in-out; 
+	-moz-transition: all .55s ease-in-out; 
+	-webkit-transition: all .55s ease-in-out; 
+	}
+	
+/*regeltje wat animatie bug van slider*/
+#banner-slide img{
+	transition:none;
+	-moz-transition:none;
+	-webkit-transition:none;
+	}
+	
+.wrapper {
+	width:90%;
+	max-width:1300px;
+	margin:auto;
+	background-color:#FFFFFF;
+	padding:10px;
+	padding-top:70px;
+	}
+@media screen and (min-aspect-ratio: 16/9){
+.wrapper {
+	max-width:950px;
+	}
+	}
+	
+.wrapper_donker {
+	background-color: rgba(150,150,150,0.95);
+	padding-top: 10px;
+	}
+	
+.content {
+	padding:3%;
+	max-width:1280px;
+	margin:auto;
+	}	
+/*hier kan je instellingen doen voor alle afbeeldingen, denk aan borders etc.*/
+.content img{
+	width:100%;
+	max-width:1240px;
+	display:block;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+	
+/*hier kan je instellngen voor media doen*/
+.media-wrapper {
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.media-wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+.media-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* fill parent */
+  background-color: deepskyblue;
+  /* let's see it! */
+  color: white;
+}
+
+/*swf object*/
+.content object{
+	width:100%;
+	height:100%;
+	}	
+/*youtube embed*/
+.content iframe{
+	width:100%;
+	height:100%;
+	}
+	
+
+h1, h2, h3, h4, h5, h6{
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+	
+/*hier stel je de kleur van een link in*/		
+a {
+	color:#00A2C8;
+	text-decoration:none;
+	}
+a:hover{
+	text-decoration:underline;
+	}
+	
+/*kleur van horizontale lijst*/
+hr {
+	border:none;
+	border-bottom:1px dashed #8F8F8F;
+	}
+	
+.clear{
+	clear:both;
+	}
+
+/*--------------- HEADER -----------------*/
+#header {
+	width:100%;
+	min-height:30px;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgba(150,150,150,0.95);
+	background-image:none;
+	padding-top:10px;
+	padding-bottom:10px;
+	z-index:2;
+	max-height:999px;
+	}
+	
+#header .wrapper{
+	padding:0;
+	background-color:#FF8587;
+	}
+	
+/*--------------- JOUW NAAM -----------------*/
+#naam{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#707070;
+	}
+#naam h1{
+	color:#FFF;
+	font-size:24px;
+	margin:0;
+	}
+	
+.omschr{
+	height:17px;
+	max-height:999px;
+	opacity:1;
+	}
+@media screen and (max-width: 800px) {
+.omschr{
+	height:0;
+	overflow:hidden;
+	opacity:0;
+	}
+	}
+/*--------------- KNOPPEN -----------------*/
+#totop{
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	line-height:60px;
+	text-align:center;
+	display:none;
+	position:fixed;
+	z-index:4;
+	bottom:20px;
+	right:2%;
+	background-color: rgba(150,150,150,0.95);
+	color: #FFFFFF;
+	font-weight:bold;
+	}
+	
+#knoppen{
+	padding-top:25px;
+	float:right;
+	max-height:999px;
+	}
+	
+#knoppen a{
+	color: #D5D5D5;
+	font-weight:bold;
+	background-color:transparent;
+	background-image:none;
+	margin-left: 20px;
+	text-decoration:none;
+	}
+#knoppen a:hover{
+	color:#FFFFFF;
+	background-color:transparent;
+	background-image:none;
+	text-decoration:underline;
+	}
+	
+#menu-toggle {
+ 	display: none; /* hide the checkbox */
+	}
+
+@media screen and (max-width: 800px) {
+.menu-knop {
+	background-image:url(../images/menu-knop.png);
+	cursor: pointer;
+	position: fixed;
+	top:0;
+	right:0;
+	z-index:3;
+	display:block;
+	width:50px;
+	height:50px;
+	}
+
+#menu-toggle {
+ 	display: none; /* hide the checkbox */
+	}
+
+#knoppen {
+ 	position:fixed;
+	width:100%;
+	top:55px;
+	right:0;
+	padding:0;
+	max-height:0;
+	overflow:hidden;
+	opacity:0;
+	}
+#knoppen a{
+	display:block;
+	text-align:center;
+	float:left;
+	width:45%;
+	margin:0.5%;
+	padding:2%;
+	background-color: rgba(150,150,150,0.95);
+	font-size:24px;
+	}
+#knoppen a:hover{
+	background-color: rgba(0,0,0,0.50);
+	}
+#menu-toggle:checked + #header .wrapper #knoppen {
+	max-height:999px;
+	opacity:1;
+	}	
+
+	}
+
+/*--------------- LABELS -----------------*/
+.label{
+	position:absolute;
+	margin-top:-65px;
+	}
+	
+/*--------------- PROJECTEN -----------------*/
+.projecten img{
+	width:31.33%;
+	margin:1%;
+	max-width:500px;
+	float:left;
+	transition: all .55s ease-in-out; 
+	-moz-transition: all .55s ease-in-out; 
+	-webkit-transition: all .55s ease-in-out; 
+	}
+
+#project_header{
+	width:50%;
+	margin-right:20px;
+	max-width:500px;
+	float:left;
+	}
+	
+.project_info{
+	padding-top:0;
+	background-color:#C7C7C7;
+	}
+.project_info h2,p{
+	margin:0;
+	}
+.project_info a {
+	display:inline-block;
+	background-color: rgba(150,150,150,0.95);
+	color: #FFFFFF;
+	font-weight:bold;
+	margin:5px;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:5px;
+	width: inherit;
+	}
+@media screen and (max-width: 900px) {
+.projecten img{
+	width:46%;
+	margin:0.5%;
+	margin-left:2%;
+	margin-right:2%;
+	}
+}
+@media screen and (max-width: 650px) {
+.projecten img{
+	width:92%;
+	margin-left:4%;
+	margin-right:4%;
+	}
+	}
+@media screen and (max-width: 1100px) {
+#project_header{
+	width:100%;
+	float:none;
+	max-width:500px;
+	margin:auto;
+	}
+.project_info{
+	text-align:center;
+	}
+	}
+/*--------------- CONTACT -----------------*/
+.contact{
+	padding-top:0;
+	background-color:#C7C7C7;
+	}
+.contact .content{
+	max-width:800px;
+	margin:auto;
+	}
+#contact_container {
+	display:table;
+    border-spacing:0;
+    width:100%;
+	}
+	
+#contact_container > div {
+    display:table-cell;
+	}
+#contact_container div {
+	vertical-align:top;
+	}
+#contact_foto{
+	width:200px;
+	margin-right:20px;
+	display:block;
+	}
+#contact_tekst {
+	padding-bottom:20px;
+	}
+	
+/*--------------- SOCIAL BAR -----------------*/
+#social_bar{
+	width:50px;
+	padding-left:20px;
+	}
+#social_bar a{
+	display:block;
+	width:50px;
+	height:50px;
+	}
+/* de verschillende social buttons */
+#facebook-knop{ background-image:url(../images/facebook-knop.png);}
+#linkedin-knop{ background-image:url(../images/linkedin-knop.png);}
+#mail-knop{ 		background-image:url(../images/mail-knop.png);}
+
+@media screen and (max-width: 800px) {
+#contact_container > div {
+    display:block;
+	}
+	
+#contact_foto{
+	width:80%;
+	max-width:200px;
+	margin:auto;
+	}
+#social_bar{
+	padding:0;
+	width:auto;
+	text-align:center;
+	}
+#social_bar a{
+	display: inline-block;
+	}
+	}
+

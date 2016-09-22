@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Game Artist Portfolio Voornaam Achternaam</title>
+<!--Onderstaande info is belangrijk voor Google-->
+<meta name="description" content="Game Artist Portfolio Voornaam Achternaam, met 2d, 3d en animatiewerk.">
+<meta name="keywords" content="game, artist, portfolio, voornaam, achternaam, 2d, 3d, animatie, prototypes">
+
+<!--Icoontje in tablad, kan je maken met online favicon generator-->
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!--Stelt viewport in voor mobiel -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Link naar de stylesheet voor de pagina-->
+<link rel="stylesheet" href="css/style.css">
+
+<!--Jquery inladen-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+<script>
+<!--Script voor smooth scroll-->
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	  var target = $(this.hash);
+	  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	  if (target.length) {
+		$('html,body').animate({
+		  scrollTop: target.offset().top
+		}, 500);
+		return false;
+	  }
+	}
+  });
+});
+
+<!--Script voor to top knop-->
+$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#totop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('#totop').stop(true, true).fadeOut();
+    }
+});
+</script>
+
+</head>
+
+<!--Hier begint de body-->
+<body id="goto-home">
+
+<!--knop voor scroll to top-->
+<a id="totop" href="#goto-home">top</a>
+
+<label for="menu-toggle" class="menu-knop"></label> 
+<input type="checkbox" id="menu-toggle"/>  
+
+<!--Dit is de header met je naam en de knoppen-->
+<div id="header">
+	<div class="wrapper" style="padding:0">
+        <a id="naam" href="index.html"><div class="omschr">Game Artist Portfolio </div><h1>Voornaam Achternaam</h1></a>
+        <div id="knoppen">
+        	<a href="index.html#goto-projecten">Home</a>
+            <a href="project.html">Project 1</a>
+            <a href="project.html">Project 2</a>
+            <a href="project.html">Project 3</a>
+        </div>
+    </div>
+</div>
+<!--Hier eindigt de header-->
+
+<div class="wrapper" style="padding-top:65px">
+<h1 style="text-align:center">Project 1</h1> 
+</div>
+
+<!--DIt is een blok dat anders gekleurd is, hier zou je bijv een speelbare game of filmpje in kunnen laten zien-->
+<div class="wrapper wrapper_donker">
+	<div class="content">
+		<img src="werk/video1.jpg">
+    </div>
+</div>
+
+<div class="wrapper" style="padding-top:0">
+    
+    <div class="content">
+    
+        <a href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
+        <a href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
+        <a href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
+      
+    </div>  
+</div>
+<div class="wrapper project_info">
+
+	<div class="content">
+    
+    	<!--Header voor het project en eventuele korte omschrijving-->
+        <img id="project_header" src="werk/project1.jpg">
+        <h2>Project 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec 
+        pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+        rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+        <hr>
+        <a href="linknaargame">speel</a>
+        <br>
+        <a href="linknaardownload">download</a>       
+    </div>
+    
+    <div class="clear"></div>    
+</div>
+
+</body>
+</html>
