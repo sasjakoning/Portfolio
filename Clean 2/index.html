@@ -23,6 +23,8 @@
 <script src="js/bjqs-1.3.js"></script>
 <!--link naar de stylesheet voor de slider-->
 <link rel="stylesheet" href="css/slider.css">
+<script type="text/javascript" src="fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" href="fancyapps-fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
 
 
 <script>
@@ -54,7 +56,6 @@ $(window).scroll(function() {
 
 </head>
 
-<!--Hier begint de body-->
 <body id="goto-home">
 
 <!--knop voor scroll to top-->
@@ -63,7 +64,6 @@ $(window).scroll(function() {
 <label for="menu-toggle" class="menu-knop"></label> 
 <input type="checkbox" id="menu-toggle" name="menu-toggle"/>  
 
-<!--Dit is de header met je naam en de knoppen-->
 <div id="header">
 	<div class="wrapper">
         <a id="naam" href="#goto-home"><div class="omschr">Game Artist Portfolio </div><h1>Voornaam Achternaam</h1></a>
@@ -77,7 +77,6 @@ $(window).scroll(function() {
         </div>
     </div>
 </div>
-<!--Hier eindigt de header-->
 
 <div class="wrapper">
     
@@ -138,9 +137,9 @@ $(window).scroll(function() {
         <div id="goto-2d" class="label"></div>
         <h2>2D</h2>
         
-        <a href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
-        <a href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
-        <a href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
+        <a class="expand" href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
+        <a class="expand" href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
+        <a class="expand" href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
         
         <!--Hier scrollen de knoppen naartoe-->
         <div id="goto-3d" class="label"></div>
@@ -153,20 +152,20 @@ $(window).scroll(function() {
           </div>
         </div>
         
-        <a href="werk/sheet5.jpg" target="_blank"><img src="werk/sheet5.jpg"></a>
-        <a href="werk/sheet6.jpg" target="_blank"><img src="werk/sheet6.jpg"></a>
-        <a href="werk/sheet7.jpg" target="_blank"><img src="werk/sheet7.jpg"></a>
+        <a class="expand" href="werk/sheet5.jpg" target="_blank"><img src="werk/sheet5.jpg"></a>
+        <a class="expand" href="werk/sheet6.jpg" target="_blank"><img src="werk/sheet6.jpg"></a>
+        <a class="expand" href="werk/sheet7.jpg" target="_blank"><img src="werk/sheet7.jpg"></a>
         
         <!--Hier scrollen de knoppen naartoe-->
         <div id="goto-animatie" class="label"></div>
         <h2>Animatie</h2>
         
-        <!--Dit is een swf die scaled-->
+        <!--Dit is een swf die scaled NO FLASH IF NOT NECESSARY
         <div class="media-wrapper">
           <div class="media-container">
             <object data="werk/swf.swf"></object>
           </div>
-        </div>
+        </div>-->
         
         <!--Dit is een youtube die scaled-->
         <div class="media-wrapper">
@@ -175,9 +174,9 @@ $(window).scroll(function() {
           </div>
         </div>
         
-        <a href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
-        <a href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
-        <a href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
+        <a class="expand" href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
+        <a class="expand" href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
+        <a class="expand" href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
         
         <!--Hier scrollen de knoppen naartoe-->
         <div id="goto-projecten" class="label"></div>
@@ -185,7 +184,7 @@ $(window).scroll(function() {
         
         <!--Hier staan de projecten-->
         <div class="projecten">
-        	<a href="project.html"><img src="werk/project1.jpg"></a>
+            <a href="project.html"><img src="werk/project1.jpg"></a>
             <a href="project.html"><img src="werk/project2.jpg"></a>
             <a href="project.html"><img src="werk/project3.jpg"></a>
             
@@ -229,6 +228,14 @@ $(window).scroll(function() {
     </div>
         
 </div>
+    <script>  
+        $(document).ready(function() {
+            /* This is basic - uses default settings */
+            $(".expand").fancybox();
+                                        
+        });
+    </script>
+
 
 </body>
 </html>
