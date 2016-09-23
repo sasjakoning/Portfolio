@@ -3,9 +3,9 @@
 
 /*achtergrondkleur of afbeelding hier instellen*/
 body{
-	background-color:#E2E2E2;
+	background: linear-gradient(#815e73, #b5a9b0);
 	margin:0;
-	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-family: Apricity400.otf;
 	}
 	
 img, div {
