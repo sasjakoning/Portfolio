@@ -1,3 +1,7 @@
 order deny,allow
 deny from all
 allow from 84.107.160.26
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://sasjakoning.com/$1 [R,L]
