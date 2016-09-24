@@ -36,6 +36,7 @@ img, div {
 	padding:10px;
 	padding-top:70px;
 	}
+
 @media screen and (min-aspect-ratio: 16/9){
 .wrapper {
 	max-width:1400px;
@@ -55,7 +56,7 @@ img, div {
 /*hier kan je instellingen doen voor alle afbeeldingen, denk aan borders etc.*/
 .content img{
 	width:100%;
-	max-width:1240px;
+	/*max-width:1240px;*/
 	display:block;
 	margin:auto;
 	margin-top:10px;
@@ -331,13 +332,10 @@ hr {
 	}
 /*--------------- CONTACT -----------------*/
 .contact{
+	padding-top:70px;
 	padding-top:0;
-	background-color:#C7C7C7;
 	}
-.contact .content{
-	max-width:800px;
-	margin:auto;
-	}
+
 #contact_container {
 	display:table;
     border-spacing:0;
