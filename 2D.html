@@ -68,67 +68,21 @@ $(window).scroll(function() {
 </div>
 
 <div class="wrapper">
+  <div class="content">
 
-<!--start SLIDER-->
-  <div id="banner-slide">
+        <div class="projecten">
+            <a href="project.html"><img src="werk/project1.jpg"></a>
+            <a href="project.html"><img src="werk/project2.jpg"></a>
+            <a href="project.html"><img src="werk/project3.jpg"></a>
+            <a href="project.html"><img src="werk/project3.jpg"></a>
+            <a href="project.html"><img src="werk/project1.jpg"></a>
+            <a href="project.html"><img src="werk/project2.jpg"></a>
+            <a href="project.html"><img src="werk/project3.jpg"></a>
+            <a href="project.html"><img src="werk/project3.jpg"></a>
+            <a href="project.html"><img src="werk/project3.jpg"></a>
 
-    <!-- start Basic Jquery Slider -->
-    <ul class="bjqs">
-      <li><img src="werk/sheet1.jpg" title="Dit is sheet 1"></li>
-      <li><img src="werk/sheet2.jpg" title="Dit is sheet 2"></li>
-      <li><img src="werk/sheet3.jpg" title="Dit is sheet 3"></li>
-    </ul>
-    <!-- einde Basis Jquery Slider -->
-
-  </div>
-
-<!-- stukje script met instellingen voor de slider -->
-  <script class="secret-source">
-    jQuery(document).ready(function($) {
-
-      $('#banner-slide').bjqs({
-        // width and height need to be provided to enforce consistency
-        // if responsive is set to true, these values act as maximum dimensions
-        width : 1280,
-        height : 720,
-
-        // animation values
-        animtype : 'fade', // accepts 'fade' or 'slide'
-        animduration : 400, // how fast the animation are
-        animspeed : 4500, // the delay between each slide
-        automatic : true, // automatic
-
-        // control and marker configuration
-        showcontrols : true, // show next and prev controls
-        centercontrols : true, // center controls verically
-        nexttext : 'Next', // Text for 'next' button (can use HTML)
-        prevtext : 'Prev', // Text for 'previous' button (can use HTML)
-        showmarkers : true, // Show individual slide markers
-        centermarkers : true, // Center markers horizontally
-
-        // interaction values
-        keyboardnav : true, // enable keyboard navigation
-        hoverpause : false, // pause the slider on hover
-
-        // presentational options
-        usecaptions : true, // show captions for images using the image title tag
-        randomstart : false, // start slider at random slide
-        responsive : true // enable responsive capabilities (beta)
-      });
-
-    });
-  </script>
-<!--einde SLIDER-->
-
-    <div class="content">
-
-        <!--Hier scrollen de knoppen naartoe-->
-        <div id="goto-2d" class="label"></div>
-        <h2>2D</h2>
-
-        <a class="expand" href="werk/sheet2.jpg" target="_blank"><img src="werk/sheet2.jpg"></a>
-        <a class="expand" href="werk/sheet3.jpg" target="_blank"><img src="werk/sheet3.jpg"></a>
-        <a class="expand" href="werk/sheet4.jpg" target="_blank"><img src="werk/sheet4.jpg"></a>
+            <div class="clear"></div>
+        </div>
 
     </div>
 </div>
@@ -137,10 +91,7 @@ $(window).scroll(function() {
         $(document).ready(function() {
             /* This is basic - uses default settings */
             $(".expand").fancybox();
-
         });
     </script>
-
-
 </body>
 </html>

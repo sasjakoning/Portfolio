@@ -2,49 +2,56 @@
 /* CSS Document */
 
 /*achtergrondkleur of afbeelding hier instellen*/
+
+@font-face {
+	font-family: myFont;
+	src: url(Segan-Light.ttf);
+}
+
 body{
 	background: linear-gradient(#815e73, #b5a9b0);
 	margin:0;
-	font-family: Apricity400.otf;
+	font-family: myFont;
 	}
-	
+
 img, div {
-	transition: all .55s ease-in-out; 
-	-moz-transition: all .55s ease-in-out; 
-	-webkit-transition: all .55s ease-in-out; 
+	transition: all .55s ease-in-out;
+	-moz-transition: all .55s ease-in-out;
+	-webkit-transition: all .55s ease-in-out;
 	}
-	
+
 /*regeltje wat animatie bug van slider*/
 #banner-slide img{
 	transition:none;
 	-moz-transition:none;
 	-webkit-transition:none;
 	}
-	
+
 .wrapper {
 	width:90%;
 	max-width:1300px;
 	margin:auto;
+	margin-bottom: 20px;
 	background-color:#FFFFFF;
 	padding:10px;
 	padding-top:70px;
 	}
 @media screen and (min-aspect-ratio: 16/9){
 .wrapper {
-	max-width:950px;
+	max-width:1400px;
 	}
 	}
-	
+
 .wrapper_donker {
 	background-color: rgba(150,150,150,0.95);
 	padding-top: 10px;
 	}
-	
+
 .content {
-	padding:3%;
-	max-width:1280px;
+	padding:1%;
+	max-width:1500px;
 	margin:auto;
-	}	
+	}
 /*hier kan je instellingen doen voor alle afbeeldingen, denk aan borders etc.*/
 .content img{
 	width:100%;
@@ -54,7 +61,7 @@ img, div {
 	margin-top:10px;
 	margin-bottom:10px;
 	}
-	
+
 /*hier kan je instellngen voor media doen*/
 .media-wrapper {
   width: 100%;
@@ -74,8 +81,8 @@ img, div {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
-  left: 0;
+  right: 66px;
+  left: 66px;
   /* fill parent */
   background-color: deepskyblue;
   /* let's see it! */
@@ -86,20 +93,20 @@ img, div {
 .content object{
 	width:100%;
 	height:100%;
-	}	
+	}
 /*youtube embed*/
 .content iframe{
 	width:100%;
 	height:100%;
 	}
-	
+
 
 h1, h2, h3, h4, h5, h6{
 	margin-top:5px;
 	margin-bottom:5px;
 	}
-	
-/*hier stel je de kleur van een link in*/		
+
+/*hier stel je de kleur van een link in*/
 a {
 	color:#00A2C8;
 	text-decoration:none;
@@ -107,13 +114,13 @@ a {
 a:hover{
 	text-decoration:underline;
 	}
-	
+
 /*kleur van horizontale lijst*/
 hr {
 	border:none;
 	border-bottom:1px dashed #8F8F8F;
 	}
-	
+
 .clear{
 	clear:both;
 	}
@@ -132,12 +139,12 @@ hr {
 	z-index:2;
 	max-height:999px;
 	}
-	
+
 #header .wrapper{
 	padding:0;
 	background-color:#FF8587;
 	}
-	
+
 /*--------------- JOUW NAAM -----------------*/
 #naam{
 	float:left;
@@ -151,7 +158,7 @@ hr {
 	font-size:24px;
 	margin:0;
 	}
-	
+
 .omschr{
 	height:17px;
 	max-height:999px;
@@ -180,13 +187,13 @@ hr {
 	color: #FFFFFF;
 	font-weight:bold;
 	}
-	
+
 #knoppen{
 	padding-top:25px;
 	float:right;
 	max-height:999px;
 	}
-	
+
 #knoppen a{
 	color: #D5D5D5;
 	font-weight:bold;
@@ -201,7 +208,7 @@ hr {
 	background-image:none;
 	text-decoration:underline;
 	}
-	
+
 #menu-toggle {
  	display: none; /* hide the checkbox */
 	}
@@ -249,7 +256,7 @@ hr {
 #menu-toggle:checked + #header .wrapper #knoppen {
 	max-height:999px;
 	opacity:1;
-	}	
+	}
 
 	}
 
@@ -258,16 +265,16 @@ hr {
 	position:absolute;
 	margin-top:-65px;
 	}
-	
+
 /*--------------- PROJECTEN -----------------*/
 .projecten img{
 	width:31.33%;
 	margin:1%;
 	max-width:500px;
 	float:left;
-	transition: all .55s ease-in-out; 
-	-moz-transition: all .55s ease-in-out; 
-	-webkit-transition: all .55s ease-in-out; 
+	transition: all .55s ease-in-out;
+	-moz-transition: all .55s ease-in-out;
+	-webkit-transition: all .55s ease-in-out;
 	}
 
 #project_header{
@@ -276,7 +283,7 @@ hr {
 	max-width:500px;
 	float:left;
 	}
-	
+
 .project_info{
 	padding-top:0;
 	background-color:#C7C7C7;
@@ -336,7 +343,7 @@ hr {
     border-spacing:0;
     width:100%;
 	}
-	
+
 #contact_container > div {
     display:table-cell;
 	}
@@ -351,7 +358,7 @@ hr {
 #contact_tekst {
 	padding-bottom:20px;
 	}
-	
+
 /*--------------- SOCIAL BAR -----------------*/
 #social_bar{
 	width:50px;
@@ -371,7 +378,7 @@ hr {
 #contact_container > div {
     display:block;
 	}
-	
+
 #contact_foto{
 	width:80%;
 	max-width:200px;
@@ -386,4 +393,3 @@ hr {
 	display: inline-block;
 	}
 	}
-
