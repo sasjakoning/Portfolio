@@ -133,7 +133,7 @@ hr {
 	position:fixed;
 	top:0;
 	left:0;
-	background-color: rgba(150,150,150,0.95);
+	background-color: rgba(51,51,51,0.95);
 	background-image:none;
 	padding-top:10px;
 	padding-bottom:10px;
@@ -354,24 +354,26 @@ hr {
 	display:block;
 	}
 #contact_tekst {
-	padding-bottom:20px;
+	padding-bottom:30px;
 	}
 
 /*--------------- SOCIAL BAR -----------------*/
 #social_bar{
-	width:50px;
+	width:30px;
 	padding-left:20px;
 	}
 #social_bar a{
 	display:block;
-	width:50px;
-	height:50px;
+	width:40px;
+	height:40px;
 	}
 /* de verschillende social buttons */
-#facebook-knop{ background-image:url(../images/facebook-knop.png);}
-#linkedin-knop{ background-image:url(../images/linkedin-knop.png);}
-#mail-knop{ 		background-image:url(../images/mail-knop.png);}
-
+#facebook{ background-image:url(../images/facebook.png);}
+#linkedin{ background-image:url(../images/linkedin.png);}
+#mail{ 		background-image:url(../images/mail.png);}
+#artstation{ background-image:url(../images/artstation.png);}
+#instagram{background-image:url(../images/instagram.png);}
+#deviantart{background-image:url(../images/deviantart.png);}
 @media screen and (max-width: 800px) {
 #contact_container > div {
     display:block;
