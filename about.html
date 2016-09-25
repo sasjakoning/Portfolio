@@ -34,22 +34,11 @@ $(function() {
 	}
   });
 })
-<!--Script voor to top knop-->
-$(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#totop:hidden').stop(true, true).fadeIn();
-    } else {
-        $('#totop').stop(true, true).fadeOut();
-    }
-});
 </script>
 
 </head>
 
 <body id="goto-home">
-
-<!--knop voor scroll to top-->
-<a id="totop" href="#goto-home">top</a>
 
 <label for="menu-toggle" class="menu-knop"></label>
 <input type="checkbox" id="menu-toggle" name="menu-toggle"/>

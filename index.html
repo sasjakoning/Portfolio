@@ -34,29 +34,18 @@ $(function() {
 	}
   });
 })
-<!--Script voor to top knop-->
-$(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#totop:hidden').stop(true, true).fadeIn();
-    } else {
-        $('#totop').stop(true, true).fadeOut();
-    }
-});
 </script>
 
 </head>
 
 <body id="goto-home">
 
-<!--knop voor scroll to top-->
-<a id="totop" href="#goto-home">top</a>
-
 <label for="menu-toggle" class="menu-knop"></label>
 <input type="checkbox" id="menu-toggle" name="menu-toggle"/>
 
 <div id="header">
 	<div class="wrapper">
-        <a id="naam" href="#goto-home"><div class="omschr">Game Artist Portfolio </div><h1>Sasja Koning</h1></a>
+        <a id="naam" href="#goto-home"><img class="resize" src="images/banner.png" ></a>
         <div id="knoppen">
         	<a href="index.html">Home</a>
             <a href="2D.html">2D</a>

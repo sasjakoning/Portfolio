@@ -140,6 +140,11 @@ hr {
 	z-index:2;
 	max-height:999px;
 	}
+	
+img.resize{
+    width: 240px; /* you can use % */
+    height: auto;
+}
 
 #header .wrapper{
 	padding:0;
