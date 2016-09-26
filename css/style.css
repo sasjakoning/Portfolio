@@ -152,7 +152,7 @@ hr {
 	}
 
 img.resize{
-    width: 240px; /* you can use % */
+    width: 300px; /* you can use % */
     height: auto;
 }
 
@@ -199,7 +199,7 @@ img.resize{
 	z-index:4;
 	bottom:20px;
 	right:2%;
-	background-color: rgba(150,150,150,0.95);
+	background-color: rgba(51,51,51,0.95);
 	color: #FFFFFF;
 	font-weight:bold;
 	}
@@ -263,7 +263,7 @@ img.resize{
 	width:45%;
 	margin:0.5%;
 	padding:2%;
-	background-color: rgba(150,150,150,0.95);
+	background-color: rgba(51,51,51,0.95);
 	font-size:24px;
 	}
 #knoppen a:hover{
