@@ -9,7 +9,7 @@
 }
 
 body{
-	background: #565656;
+	background-color:#565656;
 	background-size: cover;
 	margin:0;
 	font-family: myFont;
@@ -34,10 +34,10 @@ img, div {
 	}
 
 .wrapper {
-	width:90%;
+	width:80%;
 	max-width:1300px;
 	margin:auto;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	background-color:#FFFFFF;
 	padding:10px;
 	padding-top:10px;
