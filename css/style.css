@@ -9,8 +9,8 @@
 }
 
 body{
-	background-color:#565656;
-	background-size: cover;
+	background-image: url(../images/background.png);
+	background-repeat: repeat-y;
 	margin:0;
 	font-family: myFont;
 	min-height: 100%;
@@ -47,11 +47,15 @@ img, div {
 		margin-top: 70px;
 	}
 
-@media screen and (min-aspect-ratio: 16/9){
-.wrapper {
-	max-width:1400px;
+@media screen and (min-aspect-ratio: 16/9){	
+	.wrapper {
+		max-width:1400px;
 	}
+	
+	#bio {
+		width: 60%;
 	}
+}
 
 .wrapper_donker {
 	background-color: rgba(150,150,150,0.95);
@@ -59,10 +63,11 @@ img, div {
 	}
 
 .content {
-	padding:1%;
+	padding:0%;
 	max-width:1500px;
 	margin:auto;
 	}
+
 /*hier kan je instellingen doen voor alle afbeeldingen, denk aan borders etc.*/
 .content img{
 	width:100%;
